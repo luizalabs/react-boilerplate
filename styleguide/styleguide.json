@@ -1,0 +1,12 @@
+{
+  "title": "Styleguide",
+  "files": [
+      "../dist/styles.css"
+  ],
+  "babelConfig": {
+    "presets": ["es2015", "stage-0", "react"],
+    "plugins": [
+      ["transform-decorators-legacy"]
+    ]
+  }
+}

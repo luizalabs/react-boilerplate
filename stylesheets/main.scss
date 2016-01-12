@@ -1,0 +1,19 @@
+:root {
+    --theRed: red;
+    --theGreen: green;
+}
+
+body {
+    color: var(--theGreen);
+}
+
+.loading {
+    color: var(--theRed);
+}
+
+a {
+    opacity: 0.5;
+}
+
+@import 'bourbon';
+@import 'neat';
