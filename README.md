@@ -20,6 +20,10 @@ Luizalabs React Boilerplate
 
 1. `npm run lint`
 
+# Check new package versions
+
+1. `npm run check`
+
 # Build to production
 
 1. `npm run build`
