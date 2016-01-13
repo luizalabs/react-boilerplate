@@ -4,6 +4,7 @@ const sassPaths = require('node-neat').includePaths.map((sassPath) => {
   return `includePaths[]=${sassPath}`;
 }).join('&');
 const cssnext = require('cssnext');
+const bemLinter = require('postcss-bem-linter');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -60,6 +61,6 @@ module.exports = {
     contentBase: 'public/'
   },
   postcss() {
-    return [cssnext()];
+    return [cssnext(), bemLinter()];
   }
 };
