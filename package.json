@@ -70,6 +70,7 @@
     "node-bourbon": "^4.2.3",
     "node-neat": "^1.7.2",
     "node-sass": "^3.4.2",
+    "normalize.css": "^3.0.3",
     "postcss": "^5.0.14",
     "postcss-cssnext": "^2.4.0",
     "postcss-loader": "^0.8.0",
