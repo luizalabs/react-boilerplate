@@ -1,15 +1,17 @@
-const React = require('react');
-const { render } = require('react-dom');
-const { Provider } = require('react-redux');
-const { Router, Route } = require('react-router');
-const { createHashHistory } = require('history');
-const { syncReduxAndRouter } = require('redux-simple-router');
+import React from 'react';
+import  {render} from 'react-dom';
+import  { Provider } from 'react-redux';
+import  { Router, Route } from 'react-router';
+import  { createHashHistory } from 'history';
 
-const App = require('./containers/App');
-const DetailsPage = require('./containers/DetailsPage');
-const configureStore = require('./store/configure');
+import  { syncReduxAndRouter } from 'redux-simple-router';
 
-require('../stylesheets/main.scss');
+import  App from './containers/App';
+
+import  DetailsPage  from './containers/DetailsPage';
+import  configureStore from './store/configure';
+
+import  '../stylesheets/main.scss';
 
 const history = createHashHistory();
 const store = configureStore();

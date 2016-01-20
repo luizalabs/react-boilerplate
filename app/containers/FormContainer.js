@@ -1,11 +1,11 @@
-const React = require('react');
+import React from 'react';
 const { Component, PropTypes } = React;
 const { reduxForm } = require('redux-form');
 const { connect } = require('react-redux');
 
-const Form = require('../components/Form');
+import Form from '../components/Form';
 
-const productActions = require('../actions/product');
+import productActions from '../actions/product';
 
 const { func, shape, bool, object } = PropTypes;
 const validate = values => {

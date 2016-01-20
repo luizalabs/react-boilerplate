@@ -1,8 +1,8 @@
-const React = require('react');
+import React from 'react';
 const { Component, PropTypes } = React;
-const { connect } = require('react-redux');
+import { connect } from 'react-redux';
 
-const ProductLink = require('../components/ProductLink');
+import ProductLink from '../components/ProductLink';
 
 const { object } = PropTypes;
 const productProps = ({ product }) => ({ ...product });

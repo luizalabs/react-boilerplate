@@ -1,10 +1,10 @@
-const React = require('react');
+import  React from  'react';
 const { Component, PropTypes } = React;
 const { connect } = require('react-redux');
 const { Link } = require('react-router');
 
-const ProductContainer = require('./ProductContainer');
-const productActions = require('../actions/product');
+import ProductContainer from './ProductContainer';
+import productActions from '../actions/product';
 
 const productProps = ({ product }) => ({ ...product });
 const { func, shape, string, object } = PropTypes;

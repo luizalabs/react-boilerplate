@@ -42,3 +42,8 @@ node_modules
 
 
 dist/
+
+
+#Vim Files
+*.swp
+*.un~

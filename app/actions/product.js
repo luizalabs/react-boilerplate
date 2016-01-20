@@ -1,4 +1,4 @@
-const { reset } = require('redux-form');
+import { reset } from 'redux-form';
 
 function getProductAction(id) {
   return {

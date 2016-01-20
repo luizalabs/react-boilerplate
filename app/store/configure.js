@@ -1,6 +1,6 @@
-const { createStore, applyMiddleware, compose } = require('redux');
-const thunk = require('redux-thunk');
-const reducers = require('../reducers');
+import { createStore, applyMiddleware, compose } from 'redux';
+import  thunk from 'redux-thunk';
+import reducers  from '../reducers';
 
 const finalCreateStore = compose(
   applyMiddleware(thunk),
