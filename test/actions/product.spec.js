@@ -57,7 +57,7 @@ describe('productActions', () => {
         cash: 80.0
       },
       subcategory: 'iphones',
-      id: id
+      id
     };
     const expectedActions = [
       { type: 'GET_PRODUCT', id },

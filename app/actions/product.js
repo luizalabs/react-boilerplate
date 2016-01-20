@@ -1,4 +1,4 @@
-import { reset } from 'redux-form';
+import { reset } from 'redux-form');
 
 function getProductAction(id) {
   return {
@@ -39,7 +39,7 @@ function getProduct(id) {
         cash: 80.0
       },
       subcategory: 'iphones',
-      id: id
+      id
     }));
     return dispatch(reset('product'));
   };
