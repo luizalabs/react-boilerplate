@@ -1,7 +1,5 @@
-import React from 'react';
-
-const   { Component, PropTypes } = React;
-import  { connect } from 'react-redux';
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
 
 import Product from '../components/Product';
 import Loading from '../components/Loading';

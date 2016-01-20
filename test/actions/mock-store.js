@@ -1,7 +1,6 @@
-import expect  from 'expect';
-import thunk   from 'redux-thunk';
-import redux   from 'redux';
-const { applyMiddleware } = redux;
+import expect from 'expect';
+import thunk from 'redux-thunk';
+import { applyMiddleware } from 'redux';
 
 const middlewares = [thunk];
 

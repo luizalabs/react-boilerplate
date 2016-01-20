@@ -1,4 +1,4 @@
-import  React from  'react';
+import React from 'react';
 const { Component, PropTypes } = React;
 const { connect } = require('react-redux');
 const { Link } = require('react-router');

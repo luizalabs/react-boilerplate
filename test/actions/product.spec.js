@@ -1,8 +1,8 @@
-import expect  from 'expect';
-import rewire  from 'rewire';
+import expect from 'expect';
+import rewire from 'rewire';
 
 import mockStore from './mock-store';
-import actions   from '../../app/actions/product';
+import actions from '../../app/actions/product';
 
 describe('productActions', () => {
   let id;

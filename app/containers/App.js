@@ -1,4 +1,4 @@
-import  React from  'react';
+import React from 'react';
 const { Component } = React;
 
 import FormContainer from './FormContainer';
