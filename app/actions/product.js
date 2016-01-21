@@ -1,4 +1,4 @@
-import { reset } from 'redux-form');
+import { reset } from 'redux-form';
 
 function getProductAction(id) {
   return {
