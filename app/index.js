@@ -20,10 +20,10 @@ syncReduxAndRouter(history, store);
 
 render(
     <Provider store={store}>
-    <Router history={history}>
-    <Route path="/" component={App} />
-    <Route path="/:id" component={DetailsPage} />
-    </Router>
+      <Router history={history}>
+        <Route path="/" component={App} />
+        <Route path="/:id" component={DetailsPage} />
+      </Router>
     </Provider>,
     document.getElementById('root')
    );

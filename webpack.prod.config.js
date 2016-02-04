@@ -30,7 +30,24 @@ module.exports = {
     loaders: [
       { test: /\.json$/, loader: 'json' },
       { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', `css!postcss!sass?${sassPaths}`) },
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel' }
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel',
+        query: {
+          presets: ['es2015', 'stage-0', 'react'],
+          plugins: [
+            ['transform-decorators-legacy'],
+            ['react-transform', {
+              transforms: [{
+                transform: 'react-transform-hmr',
+                imports: ['react'],
+                locals: ['module']
+              }, {
+                transform: 'react-transform-catch-errors',
+                imports: ['react', 'redbox-react']
+              }]
+            }]
+          ]
+        }
+      }
     ]
   },
   postcss() {
