@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 const ErrorMessage = ({ reason }) => <div>{reason}</div>;
 

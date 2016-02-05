@@ -1,8 +1,8 @@
-const React = require('react');
+import React from 'react';
 const { Component } = React;
 
-const FormContainer = require('./FormContainer');
-const ProductLinkContainer = require('./ProductLinkContainer');
+import FormContainer from './FormContainer';
+import ProductLinkContainer from './ProductLinkContainer';
 
 module.exports = class App extends Component {
   render() {

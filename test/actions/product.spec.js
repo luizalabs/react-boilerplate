@@ -1,8 +1,8 @@
-const expect = require('expect');
-const rewire = require('rewire');
+import expect from 'expect';
+import rewire from 'rewire';
 
-const mockStore = require('./mock-store');
-const actions = rewire('../../app/actions/product');
+import mockStore from './mock-store';
+import actions from '../../app/actions/product';
 
 describe('productActions', () => {
   let id;
@@ -57,7 +57,7 @@ describe('productActions', () => {
         cash: 80.0
       },
       subcategory: 'iphones',
-      id: id
+      id
     };
     const expectedActions = [
       { type: 'GET_PRODUCT', id },

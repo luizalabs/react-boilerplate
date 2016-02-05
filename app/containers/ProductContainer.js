@@ -1,10 +1,9 @@
-const React = require('react');
-const { Component, PropTypes } = React;
-const { connect } = require('react-redux');
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
 
-const Product = require('../components/Product');
-const Loading = require('../components/Loading');
-const ErrorMessage = require('../components/ErrorMessage');
+import Product from '../components/Product';
+import Loading from '../components/Loading';
+import ErrorMessage from '../components/ErrorMessage';
 
 const { object, bool, string } = PropTypes;
 const productProps = ({ product }) => ({ ...product });
